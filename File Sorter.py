@@ -46,6 +46,10 @@ def SortObjects():
             src_path = os.path.join(UserPath, items)
             dst_path = os.path.join(f'{UserPath}/OBJ MTL', items)
             shutil.move(src_path, dst_path)
+        elif File_extension == ".mtl":
+            src_path = os.path.join(UserPath, items)
+            dst_path = os.path.join(f'{UserPath}/OBJ MTL', items)
+            shutil.move(src_path, dst_path)
         elif File_extension == ".exe":
             src_path = os.path.join(UserPath, items)
             dst_path = os.path.join(f'{UserPath}/APPS', items)
